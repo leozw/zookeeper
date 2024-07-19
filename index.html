@@ -80,19 +80,25 @@
         information, naming, and providing distributed synchronization. This
         Helm chart deploys Zookeeper into your Kubernetes cluster.
       </p>
-      <h2>Installation</h2>
-      <pre><code>helm install my-zookeeper ./path-to-your-helm-chart</code></pre>
+      <h2>Get Repository Info</h2>
+      <pre><code>helm repo add zookeeper https://leozw.github.io/zookeeper/</code></pre>
+      <h2>Install Chart</h2>
+      <pre><code>helm install zookeeper zookeeper/zookeeper -n kafka --create-namespace</code></pre>
       <h2>Configuration</h2>
       <p>Below are the default values for this Helm chart:</p>
-      <pre><code>...</code></pre>
+      <pre><code><a  href="https://github.com/leozw/zookeeper/blob/main/values.yaml" target="_blank" class="footer-link"
+        >Visit default values ​​on GitHub</a
+      ></code></pre>
+      <h2>Uninstall Chart</h2>
+      <pre><code>helm uninstall [RELEASE_NAME]</code></pre>
       <h2>Usage</h2>
       <p>Instructions on how to use the Zookeeper Helm chart.</p>
     </div>
     <footer>
-      <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <p>&copy; 2024 Leonardo Zwirtes.</p>
       <p>
-        <a href="https://your-company-website.com" class="footer-link"
-          >Visit our website</a
+        <a href="https://github.com/leozw" target="_blank" class="footer-link"
+          >Visit my GitHub</a
         >
       </p>
     </footer>
